@@ -86,7 +86,9 @@ nav ul li a {
     color: #660099;
     letter-spacing: 2px;
     cursor: pointer;
+    margin-top: -80px;
 }
+
 
 nav .hamburger {
     position: fixed;
@@ -590,4 +592,166 @@ main h3 {
 .contact {
     color: #660099;
     margin-top: 30px;
+}
+
+.contact_details {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: space-between;
+    justify-content: space-between;
+}
+
+
+.contact_box {
+    width: 100%;
+    margin: 20px 0;
+    background-color: #660099;
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact_box .round {
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 10px;
+    transform: translateY(-10px);
+
+}
+
+.contact_box .round i {
+    color: #660099;
+    text-align: center;
+    font-size: 24px;
+
+}
+
+.contact_box h5 {
+    font-size: 22px;
+    padding: 8px 0;
+}
+
+.contact_box p {
+    padding: 4px 0;
+}
+
+.contact_form {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.input_container {
+    width: 100%;
+}
+
+.form_input {
+    width: 100%;
+    border: 2px solid #660099;
+    margin: 5px 0;
+    padding: 3px;
+    color: #660099;
+    font-size: 16px;
+}
+
+.form_input::placeholder {
+    color: #66009970;
+}
+
+.contact_form button {
+    background-color: #660099;
+    font-size: 16px;
+    color: #fff;
+    letter-spacing: 2px;
+    border: 2px solid #660099;
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+@media(min-width:768px) {
+
+    .input_container:nth-of-type(1),
+    .input_container:nth-of-type(2) {
+        width: 48%;
+    }
+}
+
+@media(min-width:1024px) {
+    .contact_details {
+        flex-direction: row;
+    }
+
+    .contact_box {
+
+        padding: 15px;
+        width: 31%;
+    }
+
+    .form_input {
+        font-size: 18px;
+    }
+}
+
+footer {
+    background-color: #660099;
+    color: #fff;
+    margin-top: 20px;
+    padding: 20px 0;
+}
+
+.footer_container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer_section {
+    margin: 15px 0;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.footer_section p {
+    width: 90%;
+    line-height: 200%;
+}
+
+.footer_section i {
+    margin-right: 10px;
+}
+
+.footer_section a {
+    width: 100%;
+    color: #fff;
+    text-decoration: none;
+    margin: 5px 0;
+}
+
+.footer_label {
+    width: 100%;
+    text-align: center;
+}
+
+@media(min-width:768px) {
+    .footer_section {
+        width: 32%;
+        font-size: 13px;
+    }
+}
+
+@media(min-width:1024px) {
+    .footer_section {
+        width: 30%;
+        font-size: 16px;
+    }
 }
