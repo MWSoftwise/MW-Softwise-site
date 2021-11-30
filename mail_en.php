@@ -23,7 +23,7 @@ $email  = $_POST['email'];
 $subject= 'Nowy e-mail od' . $name . '(' . $email . ')';
 $message= $_POST['msg'];
 $headers= 'From ' . $name . '(' . $email . ')';
-$headers= "Content-Type: text/html; charset=utf-8\r\n";
+$headers.= "Content-Type: text/html; charset=utf-8\r\n";
 
 mail($to, $subject, $message, $headers);
 ?>
