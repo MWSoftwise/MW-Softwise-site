@@ -28,7 +28,7 @@ $headers= "Content-Type: text/html; charset=utf-8\r\n";
 mail($to, $subject, $message, $headers);
 ?>
     <h1>Message sent successfully</h1>
-    <a href="index.html"><button>Back to the home page</button></a>
+    <a href="english.html"><button>Back to the home page</button></a>
 </header>
     
 </body>
