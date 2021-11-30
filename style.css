@@ -330,6 +330,7 @@ nav .hamburger {
     background: #fff;
     color: #660099;
     animation: button-fade 1s both 5s;
+    cursor: pointer;
 
 }
 
