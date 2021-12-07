@@ -22,13 +22,15 @@ $name   = $_POST['name'];
 $email  = $_POST['email'];
 $subject= 'Nowy e-mail od' . $name . '(' . $email . ')';
 $message= $_POST['msg'];
-$headers= 'From ' . $name . '(' . $email . ')';
-$headers.= "Content-Type: text/html; charset=utf-8\r\n";
+$headers =  'MIME-Version: 1.0' . "\r\n"; 
+$headers .= 'From: ' . $email . "\r\n";
+$headers .= 'Content-type: text/html; charset=utf-8' . "\r\n"; 
+
 
 mail($to, $subject, $message, $headers);
 ?>
-    <h1>Message sent successfully</h1>
-    <a href="english.html"><button>Back to the home page</button></a>
+    <h1>Message sent succesfully</h1>
+    <a href="index.html"><button>Back to home page</button></a>
 </header>
     
 </body>

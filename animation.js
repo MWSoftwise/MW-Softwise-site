@@ -1,11 +1,19 @@
 // Hamburger
 const burger = document.querySelector('nav .hamburger');
 const menu = document.querySelector('nav ul');
+const menuItems = document.querySelectorAll('nav ul li')
 
 
 burger.addEventListener('click', () => {
     burger.classList.toggle('active')
     menu.classList.toggle('active')
+})
+
+menuItems.forEach((item)=>{
+    item.addEventListener('click',()=>{
+        burger.classList.remove('active');
+        menu.classList.remove('active')
+    })
 })
 
 // MENU SCROLLING
